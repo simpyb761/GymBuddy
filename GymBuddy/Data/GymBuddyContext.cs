@@ -9,11 +9,23 @@ namespace GymBuddy.Data
 {
     public class GymBuddyContext : DbContext
     {
-        public GymBuddyContext (DbContextOptions<GymBuddyContext> options)
-            : base(options)
+        public GymBuddyContext(DbContextOptions<GymBuddyContext> options) : base(options) { }
+        public DbSet<Exercises> Exercises { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-        }
+            modelBuilder
+                .Entity<Exercises>()
+                .Property(p => p.TrainingLevel)
+                .HasConversion(
+                    v => v.ToString(),
+                    v => (TrainingLevel)Enum.Parse(typeof(TrainingLevel), v));
 
-        public DbSet<GymBuddy.Models.Exercises> Exercises { get; set; } = default!;
+            modelBuilder
+                .Entity<Exercises>()
+                .Property (p => p.IntensityLevel)
+                .HasConversion(
+                    v => v.ToString(),
+                    v => (IntensityLevel)Enum.Parse(typeof(IntensityLevel), v));
+        }
     }
 }

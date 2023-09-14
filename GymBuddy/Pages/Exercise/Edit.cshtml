@@ -35,14 +35,14 @@
                 <span asp-validation-for="Exercises.SecondaryMuscle" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Exercises.TrainingLevel" class="control-label"></label>
-                <input asp-for="Exercises.TrainingLevel" class="form-control" />
-                <span asp-validation-for="Exercises.TrainingLevel" class="text-danger"></span>
+                <select asp-for="Exercises.TrainingLevel" asp-items="Html.GetEnumSelectList<GymBuddy.Models.TrainingLevel>()">
+                    <option selected="selected" value="">Please select an option</option>
+                </select>
             </div>
             <div class="form-group">
-                <label asp-for="Exercises.IntensityLevel" class="control-label"></label>
-                <input asp-for="Exercises.IntensityLevel" class="form-control" />
-                <span asp-validation-for="Exercises.IntensityLevel" class="text-danger"></span>
+                <select asp-for="Exercises.IntensityLevel" asp-items="Html.GetEnumSelectList<GymBuddy.Models.IntensityLevel>()">
+                    <option selected="selected" value="">Please select an option</option>
+                </select>
             </div>
             <div class="form-group form-check">
                 <label class="form-check-label">
