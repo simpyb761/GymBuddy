@@ -1,0 +1,64 @@
+﻿@page
+@model GymBuddy.Pages.Exercise.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Exercises</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Exercises.Name" class="control-label"></label>
+                <input asp-for="Exercises.Name" class="form-control" />
+                <span asp-validation-for="Exercises.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Exercises.Description" class="control-label"></label>
+                <input asp-for="Exercises.Description" class="form-control" />
+                <span asp-validation-for="Exercises.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Exercises.PrimaryMuscle" class="control-label"></label>
+                <input asp-for="Exercises.PrimaryMuscle" class="form-control" />
+                <span asp-validation-for="Exercises.PrimaryMuscle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Exercises.SecondaryMuscle" class="control-label"></label>
+                <input asp-for="Exercises.SecondaryMuscle" class="form-control" />
+                <span asp-validation-for="Exercises.SecondaryMuscle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Exercises.TrainingLevel" class="control-label"></label>
+                <input asp-for="Exercises.TrainingLevel" class="form-control" />
+                <span asp-validation-for="Exercises.TrainingLevel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Exercises.IntensityLevel" class="control-label"></label>
+                <input asp-for="Exercises.IntensityLevel" class="form-control" />
+                <span asp-validation-for="Exercises.IntensityLevel" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Exercises.HaveCompleted" /> @Html.DisplayNameFor(model => model.Exercises.HaveCompleted)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
