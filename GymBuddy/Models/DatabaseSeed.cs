@@ -136,7 +136,65 @@ namespace GymBuddy.Models
                         TrainingLevel = "Beginner",
                         Description = "Description",
                         HaveCompleted = false,
+                    },
+                    new Exercises
+                    {
+                        Name = "Lat Pulldown",
+                        PrimaryMuscle = "Latissimus Dorsi",
+                        SecondaryMuscle = "Biceps",
+                        IntensityLevel = "Low",
+                        TrainingLevel = "Beginner",
+                        Description = "Description",
+                        HaveCompleted = false,
+                    },
+                    new Exercises
+                    {
+                        Name = "Incline Dumbell Press",
+                        PrimaryMuscle = "Pectoralis Major",
+                        SecondaryMuscle = "Triceps",
+                        IntensityLevel = "Medium",
+                        TrainingLevel = "Beginner",
+                        Description = "Description",
+                        HaveCompleted = false,
+
+
+                    },
+                    new Exercises
+                    {
+                        Name = "Preacher Curl",
+                        PrimaryMuscle = "Biceps",
+                        SecondaryMuscle = string.Empty,
+                        IntensityLevel = "Low",
+                        TrainingLevel = "Beginner",
+                        Description = "Description",
+                        HaveCompleted = false,
+
+
+                    },
+                    new Exercises
+                    {
+                        Name = "Muscle Ups",
+                        PrimaryMuscle = "Latissimus Dorsi",
+                        SecondaryMuscle = "Biceps/Triceps",
+                        IntensityLevel = "High",
+                        TrainingLevel = "Advanced",
+                        Description = "Description",
+                        HaveCompleted = false,
+
+
+                    },
+                    new Exercises
+                    {
+                        Name = "Front Squat",
+                        PrimaryMuscle = "Quadriceps",
+                        SecondaryMuscle = "Glutes",
+                        IntensityLevel = "Medium",
+                        TrainingLevel = "Intermediate",
+                        Description = "Description",
+                        HaveCompleted = false,
                     }
+
+
 
                 );
                 context.SaveChanges();
