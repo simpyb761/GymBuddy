@@ -1,1 +1,2 @@
 # GymBuddy
+The Gym Buddy allows users to search through a list of weightlifting exercises and can sort them by name, focused muscle groups, intensity level and overall difficulty. Users can also edit exercises, add new exercises, and delete them from the list. Gym Buddy will also feature images and videos on each exercise to help the user visualize how an exercise works. A checkmark interface will also allow users to mark off exercises they have already done, which can help eliminate un-useful information to the user when sorting.
