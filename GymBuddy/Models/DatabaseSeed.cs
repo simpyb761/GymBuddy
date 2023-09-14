@@ -80,6 +80,62 @@ namespace GymBuddy.Models
                         HaveCompleted = false,
 
 
+                    },
+                    new Exercises
+                    {
+                        Name = "DeadLift",
+                        PrimaryMuscle = "Quads/Hamstring/Core/Trapezius",
+                        SecondaryMuscle = "Glutes,Adductor Magnus",
+                        IntensityLevel = "Medium",
+                        TrainingLevel = "Intermediate",
+                        Description = "Description",
+                        HaveCompleted = false,
+                    },
+                    new Exercises
+                    {
+                        Name = "Bench Press",
+                        PrimaryMuscle = "Pectoralis Major",
+                        SecondaryMuscle = "Anterior Deltoid/Triceps",
+                        IntensityLevel = "Low",
+                        TrainingLevel = "Beginner",
+                        Description = "Description",
+                        HaveCompleted = false,
+
+
+                    },
+                    new Exercises
+                    {
+                        Name = "Cable Cross Over",
+                        PrimaryMuscle = "Pectoralis Major",
+                        SecondaryMuscle = "Pectoralis Minor/Anterior Deltoid",
+                        IntensityLevel = "Low",
+                        TrainingLevel = "Intermediate",
+                        Description = "Description",
+                        HaveCompleted = false,
+
+
+                    },
+                    new Exercises
+                    {
+                        Name = "Cable Row",
+                        PrimaryMuscle = "Latissimus Dorsi",
+                        SecondaryMuscle = "Spinal Erectors",
+                        IntensityLevel = "Medium",
+                        TrainingLevel = "Intermediate",
+                        Description = "Description",
+                        HaveCompleted = false,
+
+
+                    },
+                    new Exercises
+                    {
+                        Name = "Seated Hip Abductor",
+                        PrimaryMuscle = "Gluteus Medius",
+                        SecondaryMuscle = "Guteus Minimus",
+                        IntensityLevel = "Low",
+                        TrainingLevel = "Beginner",
+                        Description = "Description",
+                        HaveCompleted = false,
                     }
 
                 );
