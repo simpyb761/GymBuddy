@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vCWTeqJKeY59jeGHa20xxneGfCjSajOsXmTCxB5cLodXZMxaOhAVPQRauB8Yfn0GbUtlxmhBXhMjHrbq9M96Rg==",
+  "dgSpecHash": "YLlX1wdyYVwZtA6hBnEAbBQ6mLWNSQYmS+DDVAptrM00iMYLpruWNEtgYkq8ehUfyLW7tLdn/3EzN2cRrGzVaA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\simpy\\OneDrive\\Desktop\\Master App\\GymBuddy\\GymBuddy\\GymBuddy.csproj",
+  "projectFilePath": "C:\\Users\\simpy\\OneDrive\\Documents\\MasterDetailApp\\GymBuddy\\GymBuddy\\GymBuddy.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\simpy\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\simpy\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

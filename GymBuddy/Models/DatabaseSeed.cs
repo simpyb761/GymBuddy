@@ -29,7 +29,7 @@ namespace GymBuddy.Models
                         PrimaryMuscle = "Latissimus Dorsi",
                         SecondaryMuscle = "Biceps",
                         IntensityLevel = IntensityLevel.Low,
-                        TrainingLevel = TrainingLevel.Beginner,
+                        TrainingLevel = TrainingLevel.Advanced,
                         Description = "Description",
                         HaveCompleted = false,
                     },
