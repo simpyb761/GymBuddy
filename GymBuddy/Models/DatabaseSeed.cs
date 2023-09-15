@@ -62,7 +62,7 @@ namespace GymBuddy.Models
                         Name = "Muscle Ups",
                         PrimaryMuscle = "Latissimus Dorsi",
                         SecondaryMuscle = "Biceps/Triceps",
-                        IntensityLevel = IntensityLevel.Low,
+                        IntensityLevel = IntensityLevel.High,
                         TrainingLevel = TrainingLevel.Advanced,
                         Description = "Description",
                         HaveCompleted = false,
@@ -74,7 +74,7 @@ namespace GymBuddy.Models
                         Name = "Front Squat",
                         PrimaryMuscle = "Quadriceps",
                         SecondaryMuscle = "Glutes",
-                        IntensityLevel = IntensityLevel.Low,
+                        IntensityLevel = IntensityLevel.Medium,
                         TrainingLevel = TrainingLevel.Intermediate,
                         Description = "Description",
                         HaveCompleted = false,
@@ -86,7 +86,7 @@ namespace GymBuddy.Models
                         Name = "DeadLift",
                         PrimaryMuscle = "Quads/Hamstring/Core/Trapezius",
                         SecondaryMuscle = "Glutes,Adductor Magnus",
-                        IntensityLevel = IntensityLevel.Low,
+                        IntensityLevel = IntensityLevel.High,
                         TrainingLevel = TrainingLevel.Intermediate,
                         Description = "Description",
                         HaveCompleted = false,
@@ -108,7 +108,7 @@ namespace GymBuddy.Models
                         Name = "Cable Cross Over",
                         PrimaryMuscle = "Pectoralis Major",
                         SecondaryMuscle = "Pectoralis Minor/Anterior Deltoid",
-                        IntensityLevel = IntensityLevel.Low,
+                        IntensityLevel = IntensityLevel.Medium,
                         TrainingLevel = TrainingLevel.Beginner,
                         Description = "Description",
                         HaveCompleted = false,
@@ -139,33 +139,21 @@ namespace GymBuddy.Models
                     },
                     new Exercises
                     {
-                        Name = "Lat Pulldown",
-                        PrimaryMuscle = "Latissimus Dorsi",
-                        SecondaryMuscle = "Biceps",
-                        IntensityLevel = IntensityLevel.Low,
+                        Name = "Tricep Pushdown",
+                        PrimaryMuscle = "Tricep",
+                        SecondaryMuscle = String.Empty,
+                        IntensityLevel = IntensityLevel.Medium,
                         TrainingLevel = TrainingLevel.Beginner,
                         Description = "Description",
                         HaveCompleted = false,
                     },
                     new Exercises
                     {
-                        Name = "Incline Dumbell Press",
-                        PrimaryMuscle = "Pectoralis Major",
-                        SecondaryMuscle = "Triceps",
-                        IntensityLevel = IntensityLevel.Low,
-                        TrainingLevel = TrainingLevel.Beginner,
-                        Description = "Description",
-                        HaveCompleted = false,
-
-
-                    },
-                    new Exercises
-                    {
-                        Name = "Preacher Curl",
+                        Name = "21s curls",
                         PrimaryMuscle = "Biceps",
-                        SecondaryMuscle = string.Empty,
-                        IntensityLevel = IntensityLevel.Low,
-                        TrainingLevel = TrainingLevel.Beginner,
+                        SecondaryMuscle = String.Empty,
+                        IntensityLevel = IntensityLevel.High,
+                        TrainingLevel = TrainingLevel.Advanced,
                         Description = "Description",
                         HaveCompleted = false,
 
@@ -173,11 +161,11 @@ namespace GymBuddy.Models
                     },
                     new Exercises
                     {
-                        Name = "Muscle Ups",
-                        PrimaryMuscle = "Latissimus Dorsi",
-                        SecondaryMuscle = "Biceps/Triceps",
-                        IntensityLevel = IntensityLevel.Low,
-                        TrainingLevel = TrainingLevel.Beginner,
+                        Name = "Overhead Barbell Press",
+                        PrimaryMuscle = "Deltoids",
+                        SecondaryMuscle = "Triceps",
+                        IntensityLevel = IntensityLevel.High,
+                        TrainingLevel = TrainingLevel.Advanced,
                         Description = "Description",
                         HaveCompleted = false,
 
@@ -185,9 +173,21 @@ namespace GymBuddy.Models
                     },
                     new Exercises
                     {
-                        Name = "Front Squat",
+                        Name = "Lunges",
                         PrimaryMuscle = "Quadriceps",
-                        SecondaryMuscle = "Glutes",
+                        SecondaryMuscle = "Gluteus Maximus",
+                        IntensityLevel = IntensityLevel.Medium,
+                        TrainingLevel = TrainingLevel.Beginner,
+                        Description = "Description",
+                        HaveCompleted = false,
+
+
+                    },
+                    new Exercises
+                    {
+                        Name = "Calf Raise",
+                        PrimaryMuscle = "Calves",
+                        SecondaryMuscle = string.Empty,
                         IntensityLevel = IntensityLevel.Low,
                         TrainingLevel = TrainingLevel.Beginner,
                         Description = "Description",
