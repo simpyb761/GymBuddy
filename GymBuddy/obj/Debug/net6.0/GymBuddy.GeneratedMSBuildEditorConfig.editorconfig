@@ -16,28 +16,28 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\simpy\OneDrive\Documents\MasterDetailApp\GymBuddy\GymBuddy
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/simpy/OneDrive/Documents/MasterDetailApp/GymBuddy/GymBuddy/Pages/Ben/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmVuXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/simpy/OneDrive/Documents/MasterDetailApp/GymBuddy/GymBuddy/Pages/Ben/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmVuXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/simpy/OneDrive/Documents/MasterDetailApp/GymBuddy/GymBuddy/Pages/Ben/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmVuXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/simpy/OneDrive/Documents/MasterDetailApp/GymBuddy/GymBuddy/Pages/Ben/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmVuXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/simpy/OneDrive/Documents/MasterDetailApp/GymBuddy/GymBuddy/Pages/Ben/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmVuXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/simpy/OneDrive/Documents/MasterDetailApp/GymBuddy/GymBuddy/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/simpy/OneDrive/Documents/MasterDetailApp/GymBuddy/GymBuddy/Pages/Exercise/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXhlcmNpc2VcQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/simpy/OneDrive/Documents/MasterDetailApp/GymBuddy/GymBuddy/Pages/Exercise/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXhlcmNpc2VcRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/simpy/OneDrive/Documents/MasterDetailApp/GymBuddy/GymBuddy/Pages/Exercise/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXhlcmNpc2VcRGV0YWlscy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/simpy/OneDrive/Documents/MasterDetailApp/GymBuddy/GymBuddy/Pages/Exercise/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXhlcmNpc2VcRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/simpy/OneDrive/Documents/MasterDetailApp/GymBuddy/GymBuddy/Pages/Exercise/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXhlcmNpc2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/simpy/OneDrive/Documents/MasterDetailApp/GymBuddy/GymBuddy/Pages/Index.cshtml]
