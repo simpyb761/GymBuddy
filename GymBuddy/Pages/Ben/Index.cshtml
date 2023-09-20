@@ -2,16 +2,19 @@
 @model GymBuddy.Pages.Ben.IndexModel
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Ben's Exercises";
 }
 
-<h1>Index</h1>
+<h1>Exercises</h1>
 
 <p>
     <a asp-page="Create">Create New</a>
 </p>
 <form>
     <select asp-for="UserExperience" asp-items="Model.ExperienceLevel">
+        <option value="">All</option>
+    </select>
+    <select asp-for="UserIntensity" asp-items="Model.Intensity">
         <option value="">All</option>
     </select>
     <p>Exercise Name: <input type="text" asp-for="SearchString"/> 
@@ -23,24 +26,27 @@
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Exercises[0].Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Exercises[0].Description)
+                <a style="text-decoration:none; color:black;" asp-asp-page="./Index" asp-route-sortOrder="@Model.NameSort">&#8597</a>
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Exercises[0].PrimaryMuscle)
+                <a style="text-decoration:none; color:black;" asp-asp-page="./Index" asp-route-sortOrder="@Model.PrimarySort">&#8597</a>
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Exercises[0].SecondaryMuscle)
+                <a style="text-decoration:none; color:black;" asp-asp-page="./Index" asp-route-sortOrder="@Model.SecondarySort">&#8597</a>
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Exercises[0].TrainingLevel)
+                <a style="text-decoration:none; color:black;" asp-asp-page="./Index" asp-route-sortOrder="@Model.TrainingSort">&#8597</a>
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Exercises[0].IntensityLevel)
+                <a style="text-decoration:none; color:black;" asp-asp-page="./Index" asp-route-sortOrder="@Model.IntensitySort">&#8597</a>
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Exercises[0].HaveCompleted)
+                <a style="text-decoration:none; color:black;" asp-asp-page="./Index" asp-route-sortOrder="@Model.CompletedSort">&#8597</a>
             </th>
             <th></th>
         </tr>
@@ -50,9 +56,6 @@
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.PrimaryMuscle)
