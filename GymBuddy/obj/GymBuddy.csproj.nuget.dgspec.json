@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\meesh\\OneDrive - mail.nmc.edu\\CIT255\\GymBuddy-new\\GymBuddy\\GymBuddy\\GymBuddy.csproj": {}
+    "C:\\Users\\simpy\\OneDrive\\Documents\\MasterDetailApp\\GymBuddy\\GymBuddy\\GymBuddy.csproj": {}
   },
   "projects": {
-    "C:\\Users\\meesh\\OneDrive - mail.nmc.edu\\CIT255\\GymBuddy-new\\GymBuddy\\GymBuddy\\GymBuddy.csproj": {
+    "C:\\Users\\simpy\\OneDrive\\Documents\\MasterDetailApp\\GymBuddy\\GymBuddy\\GymBuddy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\meesh\\OneDrive - mail.nmc.edu\\CIT255\\GymBuddy-new\\GymBuddy\\GymBuddy\\GymBuddy.csproj",
+        "projectUniqueName": "C:\\Users\\simpy\\OneDrive\\Documents\\MasterDetailApp\\GymBuddy\\GymBuddy\\GymBuddy.csproj",
         "projectName": "GymBuddy",
-        "projectPath": "C:\\Users\\meesh\\OneDrive - mail.nmc.edu\\CIT255\\GymBuddy-new\\GymBuddy\\GymBuddy\\GymBuddy.csproj",
-        "packagesPath": "C:\\Users\\meesh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\meesh\\OneDrive - mail.nmc.edu\\CIT255\\GymBuddy-new\\GymBuddy\\GymBuddy\\obj\\",
+        "projectPath": "C:\\Users\\simpy\\OneDrive\\Documents\\MasterDetailApp\\GymBuddy\\GymBuddy\\GymBuddy.csproj",
+        "packagesPath": "C:\\Users\\simpy\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\simpy\\OneDrive\\Documents\\MasterDetailApp\\GymBuddy\\GymBuddy\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\meesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\simpy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
