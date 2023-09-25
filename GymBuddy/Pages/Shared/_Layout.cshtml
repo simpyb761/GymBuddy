@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/GymBuddy.styles.css" asp-append-version="true" />
     <script src="https://kit.fontawesome.com/89a93ee081.js" crossorigin="anonymous"></script>
+    <script>
+        function toggle(){
+            if (document.getElementById("filters").hidden == true) {
+                document.getElementById("filters").hidden = false;
+            } else {
+                document.getElementById("filters").hidden = true
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
