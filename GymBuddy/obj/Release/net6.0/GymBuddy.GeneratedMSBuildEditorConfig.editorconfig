@@ -1,0 +1,105 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = GymBuddy
+build_property.RootNamespace = GymBuddy
+build_property.ProjectDir = C:\Users\meesh\OneDrive - mail.nmc.edu\CIT255\GymBuddy-new\GymBuddy\GymBuddy\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\meesh\OneDrive - mail.nmc.edu\CIT255\GymBuddy-new\GymBuddy\GymBuddy
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/meesh/OneDrive - mail.nmc.edu/CIT255/GymBuddy-new/GymBuddy/GymBuddy/Pages/Ben/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmVuXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meesh/OneDrive - mail.nmc.edu/CIT255/GymBuddy-new/GymBuddy/GymBuddy/Pages/Ben/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmVuXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meesh/OneDrive - mail.nmc.edu/CIT255/GymBuddy-new/GymBuddy/GymBuddy/Pages/Ben/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmVuXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meesh/OneDrive - mail.nmc.edu/CIT255/GymBuddy-new/GymBuddy/GymBuddy/Pages/Ben/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmVuXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meesh/OneDrive - mail.nmc.edu/CIT255/GymBuddy-new/GymBuddy/GymBuddy/Pages/Ben/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmVuXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meesh/OneDrive - mail.nmc.edu/CIT255/GymBuddy-new/GymBuddy/GymBuddy/Pages/Dan/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFuXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meesh/OneDrive - mail.nmc.edu/CIT255/GymBuddy-new/GymBuddy/GymBuddy/Pages/Dan/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFuXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meesh/OneDrive - mail.nmc.edu/CIT255/GymBuddy-new/GymBuddy/GymBuddy/Pages/Dan/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFuXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meesh/OneDrive - mail.nmc.edu/CIT255/GymBuddy-new/GymBuddy/GymBuddy/Pages/Dan/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFuXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meesh/OneDrive - mail.nmc.edu/CIT255/GymBuddy-new/GymBuddy/GymBuddy/Pages/Dan/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFuXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meesh/OneDrive - mail.nmc.edu/CIT255/GymBuddy-new/GymBuddy/GymBuddy/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meesh/OneDrive - mail.nmc.edu/CIT255/GymBuddy-new/GymBuddy/GymBuddy/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meesh/OneDrive - mail.nmc.edu/CIT255/GymBuddy-new/GymBuddy/GymBuddy/Pages/Michelle/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWljaGVsbGVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meesh/OneDrive - mail.nmc.edu/CIT255/GymBuddy-new/GymBuddy/GymBuddy/Pages/Michelle/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWljaGVsbGVcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meesh/OneDrive - mail.nmc.edu/CIT255/GymBuddy-new/GymBuddy/GymBuddy/Pages/Michelle/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWljaGVsbGVcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meesh/OneDrive - mail.nmc.edu/CIT255/GymBuddy-new/GymBuddy/GymBuddy/Pages/Michelle/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWljaGVsbGVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meesh/OneDrive - mail.nmc.edu/CIT255/GymBuddy-new/GymBuddy/GymBuddy/Pages/Michelle/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWljaGVsbGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meesh/OneDrive - mail.nmc.edu/CIT255/GymBuddy-new/GymBuddy/GymBuddy/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meesh/OneDrive - mail.nmc.edu/CIT255/GymBuddy-new/GymBuddy/GymBuddy/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meesh/OneDrive - mail.nmc.edu/CIT255/GymBuddy-new/GymBuddy/GymBuddy/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meesh/OneDrive - mail.nmc.edu/CIT255/GymBuddy-new/GymBuddy/GymBuddy/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meesh/OneDrive - mail.nmc.edu/CIT255/GymBuddy-new/GymBuddy/GymBuddy/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-8d0idnudr0
