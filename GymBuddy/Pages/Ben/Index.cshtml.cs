@@ -5,15 +5,17 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.EntityFrameworkCore;
 using GymBuddy.Data;
 using GymBuddy.Models;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.View;
 using Microsoft.Data.SqlClient;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
 
 namespace GymBuddy.Pages.Ben
 {
-    
+
     public class IndexModel : PageModel
     {
         private readonly GymBuddy.Data.GymBuddyContext _context;
@@ -23,14 +25,14 @@ namespace GymBuddy.Pages.Ben
             _context = context;
         }
 
-        public IList<Exercises> Exercises { get;set; } = default!;
-        [BindProperty(SupportsGet =true)]
+        public IList<Exercises> Exercises { get; set; } = default!;
+        [BindProperty(SupportsGet = true)]
         public string? SearchString { get; set; }
-        public SelectList  ExperienceLevel { get; set; }
-        [BindProperty(SupportsGet =true)]
+        public SelectList ExperienceLevel { get; set; }
+        [BindProperty(SupportsGet = true)]
         public string? UserExperience { get; set; }
         public SelectList Intensity { get; set; }
-        [BindProperty(SupportsGet =true)]
+        [BindProperty(SupportsGet = true)]
         public string? UserIntensity { get; set; }
         public string NameSort { get; set; }
         public string CurrentSort { get; set; }
@@ -75,12 +77,6 @@ namespace GymBuddy.Pages.Ben
                 case "primary_asc":
                     exercises = exercises.OrderBy(s => s.PrimaryMuscle);
                     break;
-                case "seconday_desc":
-                    exercises = exercises.OrderByDescending(s => s.SecondaryMuscle);
-                    break;
-                case "secondary_asc":
-                    exercises = exercises.OrderBy(s => s.SecondaryMuscle);
-                    break;
                 case "training_desc":
                     exercises = exercises.OrderByDescending(s => s.TrainingLevel == TrainingLevel.Advanced ? 1 : s.TrainingLevel == TrainingLevel.Intermediate ? 2 : 3);
                     break;
@@ -97,7 +93,7 @@ namespace GymBuddy.Pages.Ben
                     exercises = exercises.OrderBy(s => s.Name);
                     break;
             }
-           
+
             if (!string.IsNullOrEmpty(SearchString))
             {
                 exercises = exercises.Where(s => s.Name.Contains(SearchString));
@@ -106,14 +102,14 @@ namespace GymBuddy.Pages.Ben
             {
                 exercises = exercises.Where(x => x.TrainingLevel == Enum.Parse<TrainingLevel>(UserExperience));
             }
-            if (!string.IsNullOrEmpty (UserIntensity)) 
+            if (!string.IsNullOrEmpty(UserIntensity))
             {
-                exercises = exercises.Where(x=> x.IntensityLevel == Enum.Parse<IntensityLevel>(UserIntensity));
+                exercises = exercises.Where(x => x.IntensityLevel == Enum.Parse<IntensityLevel>(UserIntensity));
             }
-                ExperienceLevel = new SelectList(await experienceQuery.Distinct().ToListAsync());
-                Intensity = new SelectList(await intensityQuery.Distinct().ToListAsync());
-                Exercises = await exercises.ToListAsync();
-            
+            ExperienceLevel = new SelectList(await experienceQuery.Distinct().ToListAsync());
+            Intensity = new SelectList(await intensityQuery.Distinct().ToListAsync());
+            Exercises = await exercises.ToListAsync();
+
         }
     }
 }

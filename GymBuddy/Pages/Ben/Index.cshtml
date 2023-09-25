@@ -5,46 +5,44 @@
     ViewData["Title"] = "Ben's Exercises";
 }
 
-<h1>Exercises</h1>
+<h1 class="w-50 text-center ms-auto me-auto border border-3 border-dark p-3 m-5">Exercises Database</h1>
 
-<p>
-    <a asp-page="Create">Create New</a>
-</p>
+
 <form>
-    <select asp-for="UserExperience" asp-items="Model.ExperienceLevel">
-        <option value="">All</option>
+    <input class="m-2" type="text" asp-for="SearchString" placeholder="Name Search" />
+    <select class ="m-2" asp-for="UserExperience" asp-items="Model.ExperienceLevel">
+        <option value="">Experience Level</option>
     </select>
-    <select asp-for="UserIntensity" asp-items="Model.Intensity">
-        <option value="">All</option>
+    <select class="m-2"  asp-for="UserIntensity" asp-items="Model.Intensity">
+        <option value="">Intensity Level</option>
     </select>
-    <p>Exercise Name: <input type="text" asp-for="SearchString"/> 
+    
        <input type="submit" value="Filter" />
-    </p>
+    
 </form>
-<table class="table">
-    <thead>
+<table class="table table-borderless border-bottom border-3 border-dark table-striped">
+    <thead class="table-light border border-dark border-3">
         <tr>
-            <th>
+            <th class="border-top-0 border-bottom-0 border-3 border-dark p-2">
                 @Html.DisplayNameFor(model => model.Exercises[0].Name)
                 <a style="text-decoration:none; color:black;" asp-asp-page="./Index" asp-route-sortOrder="@Model.NameSort">&#8597</a>
             </th>
-            <th>
+            <th class="border-top-0 border-bottom-0 border-3 border-dark p-2">
                 @Html.DisplayNameFor(model => model.Exercises[0].PrimaryMuscle)
                 <a style="text-decoration:none; color:black;" asp-asp-page="./Index" asp-route-sortOrder="@Model.PrimarySort">&#8597</a>
             </th>
-            <th>
+            <th class="border-top-0 border-bottom-0 border-3 border-dark p-2">
                 @Html.DisplayNameFor(model => model.Exercises[0].SecondaryMuscle)
-                <a style="text-decoration:none; color:black;" asp-asp-page="./Index" asp-route-sortOrder="@Model.SecondarySort">&#8597</a>
             </th>
-            <th>
+            <th class="border-top-0 border-bottom-0 border-3 border-dark p-2">
                 @Html.DisplayNameFor(model => model.Exercises[0].TrainingLevel)
                 <a style="text-decoration:none; color:black;" asp-asp-page="./Index" asp-route-sortOrder="@Model.TrainingSort">&#8597</a>
             </th>
-            <th>
+            <th class="border-top-0 border-bottom-0 border-3 border-dark p-2">
                 @Html.DisplayNameFor(model => model.Exercises[0].IntensityLevel)
                 <a style="text-decoration:none; color:black;" asp-asp-page="./Index" asp-route-sortOrder="@Model.IntensitySort">&#8597</a>
             </th>
-            <th>
+            <th class="border-top-0 border-bottom-0 border-3 border-end-0 border-dark p-2">
                 @Html.DisplayNameFor(model => model.Exercises[0].HaveCompleted)
                 <a style="text-decoration:none; color:black;" asp-asp-page="./Index" asp-route-sortOrder="@Model.CompletedSort">&#8597</a>
             </th>
@@ -54,30 +52,31 @@
     <tbody>
 @foreach (var item in Model.Exercises) {
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
+                <td class="border-top-0 border-bottom-0 border-3 border-dark p-4">
+                    <a asp-page="./Edit" asp-route-id="@item.Id" style="text-decoration:none;">@Html.DisplayFor(modelItem => item.Name)</a>
             </td>
-            <td>
+                <td class="border-top-0 border-bottom-0 border-3 border-dark p-4">
                 @Html.DisplayFor(modelItem => item.PrimaryMuscle)
             </td>
-            <td>
+                <td class="border-top-0 border-bottom-0 border-3 border-dark p-4">
                 @Html.DisplayFor(modelItem => item.SecondaryMuscle)
             </td>
-            <td>
+                <td class="border-top-0 border-bottom-0 border-3 border-dark p-4">
                 @Html.DisplayFor(modelItem => item.TrainingLevel)
             </td>
-            <td>
+                <td class="border-top-0 border-bottom-0 border-3 border-dark p-4">
                 @Html.DisplayFor(modelItem => item.IntensityLevel)
             </td>
-            <td>
+                <td class="border-top-0 border-bottom-0 border-3 border-end-0 border-dark p-4" ">
                 @Html.DisplayFor(modelItem => item.HaveCompleted)
             </td>
-            <td>
-                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                <td class="border-top-0 border-bottom-0 border-3 border-start-0 border-dark">
+                    <a asp-page="./Delete" asp-route-id="@item.Id"><i class="fa-solid fa-x" style="color: #ff0000;"></i></a>
             </td>
         </tr>
-}
+        }
     </tbody>
 </table>
+<p>
+    <a asp-page="Create" style="text-decoration:none;"><i class="fa-solid fa-plus" style="color: #28d41c;"></i> Add New Item</a>
+</p>
