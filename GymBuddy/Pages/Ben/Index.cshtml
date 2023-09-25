@@ -7,19 +7,23 @@
 
 <h1 class="w-50 text-center ms-auto me-auto border border-3 border-dark p-3 m-5">Exercises Database</h1>
 
+<div style="text-align:end;">
+    <form id="filters" hidden>
+        <input class="m-2" type="text" asp-for="SearchString" placeholder="Name Search" />
+        <select class="m-2" asp-for="UserExperience" asp-items="Model.ExperienceLevel">
+            <option value="">Experience Level</option>
+        </select>
+        <select class="m-2" asp-for="UserIntensity" asp-items="Model.Intensity">
+            <option value="">Intensity Level</option>
+        </select>
 
-<form>
-    <input class="m-2" type="text" asp-for="SearchString" placeholder="Name Search" />
-    <select class ="m-2" asp-for="UserExperience" asp-items="Model.ExperienceLevel">
-        <option value="">Experience Level</option>
-    </select>
-    <select class="m-2"  asp-for="UserIntensity" asp-items="Model.Intensity">
-        <option value="">Intensity Level</option>
-    </select>
-    
-       <input type="submit" value="Filter" />
-    
-</form>
+        <input type="submit" value="Filter" />
+
+    </form>
+    <button class="col-1 mb-1" style="margin-left:auto;" onclick="toggle()"><i class="fa-solid fa-filter" id="filterOpen" style="color: #000000;"></i> Filter</button>
+</div>
+
+
 <table class="table table-borderless border-bottom border-3 border-dark table-striped">
     <thead class="table-light border border-dark border-3">
         <tr>
@@ -67,16 +71,16 @@
                 <td class="border-top-0 border-bottom-0 border-3 border-dark p-4">
                 @Html.DisplayFor(modelItem => item.IntensityLevel)
             </td>
-                <td class="border-top-0 border-bottom-0 border-3 border-end-0 border-dark p-4" ">
+                <td class="border-top-0 border-bottom-0 border-3 border-end-0 border-dark p-4">
                 @Html.DisplayFor(modelItem => item.HaveCompleted)
             </td>
-                <td class="border-top-0 border-bottom-0 border-3 border-start-0 border-dark">
-                    <a asp-page="./Delete" asp-route-id="@item.Id"><i class="fa-solid fa-x" style="color: #ff0000;"></i></a>
+                <td class="border-top-0 border-bottom-0 border-3 border-start-0 border-dark pt-4">
+                    <a class="" asp-page="./Delete" asp-route-id="@item.Id"><i class="fa-solid fa-x fa-lg" style="color: #ff0000;"></i></a>
             </td>
         </tr>
         }
     </tbody>
 </table>
 <p>
-    <a asp-page="Create" style="text-decoration:none;"><i class="fa-solid fa-plus" style="color: #28d41c;"></i> Add New Item</a>
+    <a asp-page="Create" style="text-decoration:none; font-size:25px;"><i class="fa-solid fa-plus" style="color: #28d41c;"></i> Add New Item</a>
 </p>

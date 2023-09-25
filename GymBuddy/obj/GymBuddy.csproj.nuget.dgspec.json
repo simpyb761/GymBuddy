@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\simpy\\Documents\\GitHub\\GymBuddy\\GymBuddy\\GymBuddy.csproj": {}
+    "C:\\Users\\simpy\\OneDrive\\Documents\\MasterDetailApp\\GymBuddy\\GymBuddy\\GymBuddy.csproj": {}
   },
   "projects": {
-    "C:\\Users\\simpy\\Documents\\GitHub\\GymBuddy\\GymBuddy\\GymBuddy.csproj": {
+    "C:\\Users\\simpy\\OneDrive\\Documents\\MasterDetailApp\\GymBuddy\\GymBuddy\\GymBuddy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\simpy\\Documents\\GitHub\\GymBuddy\\GymBuddy\\GymBuddy.csproj",
+        "projectUniqueName": "C:\\Users\\simpy\\OneDrive\\Documents\\MasterDetailApp\\GymBuddy\\GymBuddy\\GymBuddy.csproj",
         "projectName": "GymBuddy",
-        "projectPath": "C:\\Users\\simpy\\Documents\\GitHub\\GymBuddy\\GymBuddy\\GymBuddy.csproj",
+        "projectPath": "C:\\Users\\simpy\\OneDrive\\Documents\\MasterDetailApp\\GymBuddy\\GymBuddy\\GymBuddy.csproj",
         "packagesPath": "C:\\Users\\simpy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\simpy\\Documents\\GitHub\\GymBuddy\\GymBuddy\\obj\\",
+        "outputPath": "C:\\Users\\simpy\\OneDrive\\Documents\\MasterDetailApp\\GymBuddy\\GymBuddy\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -89,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
