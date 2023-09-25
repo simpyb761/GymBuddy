@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RNbo/TKETRkNc7RZiuBzL4jV9DTb0OepFdicbqRHsgE=",
+  "Hash": "fAGYIfMho80rcx+5p75lm1JX4eeE5ShZTDMKc1eoxl0=",
   "Source": "GymBuddy",
   "BasePath": "_content/GymBuddy",
   "Mode": "Default",
@@ -66,23 +66,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
-    },
-    {
-      "Identity": "C:\\Users\\meesh\\OneDrive - mail.nmc.edu\\CIT255\\GymBuddy-new\\GymBuddy\\GymBuddy\\wwwroot\\favicon.ico",
-      "SourceId": "GymBuddy",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\meesh\\OneDrive - mail.nmc.edu\\CIT255\\GymBuddy-new\\GymBuddy\\GymBuddy\\wwwroot\\",
-      "BasePath": "_content/GymBuddy",
-      "RelativePath": "favicon.ico",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
       "Identity": "C:\\Users\\meesh\\OneDrive - mail.nmc.edu\\CIT255\\GymBuddy-new\\GymBuddy\\GymBuddy\\wwwroot\\js\\site.js",

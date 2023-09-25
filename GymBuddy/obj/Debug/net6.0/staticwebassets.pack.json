@@ -9,10 +9,6 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\meesh\\OneDrive - mail.nmc.edu\\CIT255\\GymBuddy-new\\GymBuddy\\GymBuddy\\wwwroot\\favicon.ico",
-      "PackagePath": "staticwebassets\\favicon.ico"
-    },
-    {
       "Id": "C:\\Users\\meesh\\OneDrive - mail.nmc.edu\\CIT255\\GymBuddy-new\\GymBuddy\\GymBuddy\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
