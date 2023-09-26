@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using GymBuddy.Data;
 using GymBuddy.Models;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace GymBuddy.Pages.Dan
 {
@@ -19,14 +20,38 @@ namespace GymBuddy.Pages.Dan
             _context = context;
         }
 
-        public IList<Exercises> Exercises { get;set; } = default!;
+        public IList<Exercises> Exercises { get; set; } = default!;
+        [BindProperty(SupportsGet = true)]
+        public string? SearchString { get; set; }
+        public SelectList ExperienceLevel { get; set; }
+        [BindProperty(SupportsGet = true)]
 
-        public async Task OnGetAsync()
+        public string? EXPLevel { get; set; }
+
+        public string NameSort { get; set; }
+
+        public async Task OnGetAsync(string sortOrder)
         {
-            if (_context.Exercises != null)
+            NameSort = sortOrder;
+            IQueryable<GymBuddy.Models.TrainingLevel> experienceQuery = from e in _context.Exercises
+                                                                        orderby e.TrainingLevel
+                                                                        select e.TrainingLevel;
+
+            var exercises = from e in _context.Exercises
+                            select e;
+
+            if (!string.IsNullOrEmpty(SearchString))
             {
-                Exercises = await _context.Exercises.ToListAsync();
+                exercises = exercises.Where(s => s.Name.Contains(SearchString));
             }
+
+            if (!string.IsNullOrEmpty(EXPLevel))
+            {
+                exercises = exercises.Where(x => x.TrainingLevel == Enum.Parse<TrainingLevel>(EXPLevel));
+            }
+            ExperienceLevel = new SelectList(await experienceQuery.Distinct().ToListAsync());
+            Exercises = await exercises.ToListAsync();
         }
     }
 }
+

@@ -1,16 +1,28 @@
-﻿@page
+﻿@page "{SearchString?}"
 @model GymBuddy.Pages.Dan.IndexModel
 
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1 style="background-color:DodgerBlue;
+            color: white;
+            text-align: center;">Gym Buddy Exercises List</h1>
 
 <p>
     <a asp-page="Create">Create New</a>
 </p>
-<table class="table">
+<form>
+    <p>
+        Title: <input type="text" asp-for="SearchString" />
+        <input type="submit" value="Filter" />
+        Experience Level: <select asp-for="EXPLevel" asp-items="Model.ExperienceLevel">
+            <option value="">All</option>
+        </select>
+    </p>
+   
+</form>
+<table class="table table-dark">
     <thead>
         <tr>
             <th>
