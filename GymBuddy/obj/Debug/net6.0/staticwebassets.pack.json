@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\GymBuddy.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\simpy\\OneDrive\\Documents\\MasterDetailApp\\GymBuddy\\GymBuddy\\wwwroot\\Images\\photo.jpg",
+      "PackagePath": "staticwebassets\\Images\\photo.jpg"
+    },
+    {
       "Id": "C:\\Users\\simpy\\OneDrive\\Documents\\MasterDetailApp\\GymBuddy\\GymBuddy\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

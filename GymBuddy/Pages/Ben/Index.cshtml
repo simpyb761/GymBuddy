@@ -57,7 +57,7 @@
 @foreach (var item in Model.Exercises) {
         <tr>
                 <td class="border-top-0 border-bottom-0 border-3 border-dark p-4">
-                    <a asp-page="./Edit" asp-route-id="@item.Id" style="text-decoration:none;">@Html.DisplayFor(modelItem => item.Name)</a>
+                    <a asp-page="./Details" asp-route-id="@item.Id" style="text-decoration:none;">@Html.DisplayFor(modelItem => item.Name)</a>
             </td>
                 <td class="border-top-0 border-bottom-0 border-3 border-dark p-4">
                 @Html.DisplayFor(modelItem => item.PrimaryMuscle)
@@ -75,7 +75,8 @@
                 @Html.DisplayFor(modelItem => item.HaveCompleted)
             </td>
                 <td class="border-top-0 border-bottom-0 border-3 border-start-0 border-dark pt-4">
-                    <a class="" asp-page="./Delete" asp-route-id="@item.Id"><i class="fa-solid fa-x fa-lg" style="color: #ff0000;"></i></a>
+                    <a asp-page="./Edit" asp-route-id="@item.Id"><i class="fa-solid fa-pen-to-square fa-lg" style="color: #000000;"></i></a>
+                    <a class="ms-2" asp-page="./Delete" asp-route-id="@item.Id"><i class="fa-solid fa-x fa-lg" style="color: #ff0000;"></i></a>
             </td>
         </tr>
         }
