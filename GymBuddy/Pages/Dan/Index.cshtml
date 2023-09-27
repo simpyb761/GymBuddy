@@ -7,7 +7,9 @@
 
 <h1 style="background-color:DodgerBlue;
             color: white;
-            text-align: center;">Gym Buddy Exercises List</h1>
+            text-align: center;">
+    Gym Buddy Exercises List
+</h1>
 
 <p>
     <a asp-page="Create">Create New</a>
@@ -16,11 +18,21 @@
     <p>
         Title: <input type="text" asp-for="SearchString" />
         <input type="submit" value="Filter" />
-        Experience Level: <select asp-for="EXPLevel" asp-items="Model.ExperienceLevel">
+        Experience Level:
+        <select asp-for="EXPLevel" asp-items="Model.ExperienceLevel">
             <option value="">All</option>
         </select>
+        <a asp-page="./Index" asp-route-sortOrder="desc"
+           style="float:right;background:DodgerBlue;color: white;padding:10px;border-radius:10px;text-decoration:none;;margin-bottom:10px">
+            Sort by Primary Muscle Group (descending)
+        </a>
+        <a asp-page="./Index" asp-route-sortOrder="asc"
+           style="float:right;background:DodgerBlue;color: white;padding:10px;border-radius:10px;text-decoration:none;margin-bottom:10px">
+            Sort by Primary Muscle Group (ascending)
+        </a>
+
     </p>
-   
+
 </form>
 <table class="table table-dark">
     <thead>
@@ -50,35 +62,36 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.Exercises) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PrimaryMuscle)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SecondaryMuscle)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TrainingLevel)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IntensityLevel)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.HaveCompleted)
-            </td>
-            <td>
-                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model.Exercises)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PrimaryMuscle)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SecondaryMuscle)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TrainingLevel)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IntensityLevel)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HaveCompleted)
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

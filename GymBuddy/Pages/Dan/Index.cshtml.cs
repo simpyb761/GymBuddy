@@ -49,6 +49,18 @@ namespace GymBuddy.Pages.Dan
             {
                 exercises = exercises.Where(x => x.TrainingLevel == Enum.Parse<TrainingLevel>(EXPLevel));
             }
+            if (NameSort == "desc")
+            {
+                exercises = exercises.OrderByDescending(e => e.PrimaryMuscle);
+
+            }
+            else
+            {
+                exercises = exercises.OrderBy(exercises => exercises.PrimaryMuscle);
+            }
+
+
+
             ExperienceLevel = new SelectList(await experienceQuery.Distinct().ToListAsync());
             Exercises = await exercises.ToListAsync();
         }
