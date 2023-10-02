@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using GymBuddy.Data;
+using static System.Net.WebRequestMethods;
 
 namespace GymBuddy.Models
 {
@@ -32,6 +33,7 @@ namespace GymBuddy.Models
                         TrainingLevel = TrainingLevel.Advanced,
                         Description = "Description",
                         HaveCompleted = false,
+                        Video = "https://www.youtube.com/embed/trZQjegcRx0?si=3RBxe10Q84wdCbvr"
                     },
                     new Exercises
                     {
@@ -42,6 +44,7 @@ namespace GymBuddy.Models
                         TrainingLevel = TrainingLevel.Beginner,
                         Description = "Description",
                         HaveCompleted = false,
+                        Video = "https://www.youtube.com/embed/8iPEnn-ltC8?si=oYNJJ-IqgcH7byu7"
 
 
                     },
@@ -54,6 +57,7 @@ namespace GymBuddy.Models
                         TrainingLevel = TrainingLevel.Beginner,
                         Description = "Description",
                         HaveCompleted = false,
+                        Video = "https://www.youtube.com/embed/fIWP-FRFNU0?si=qcFyEbm4RHudTUcb"
 
 
                     },
@@ -66,6 +70,7 @@ namespace GymBuddy.Models
                         TrainingLevel = TrainingLevel.Advanced,
                         Description = "Description",
                         HaveCompleted = false,
+                        Video = "https://www.youtube.com/embed/XGnOz-0ir8E?si=FASu1BGZn_b6z4cX"
 
 
                     },
@@ -78,6 +83,7 @@ namespace GymBuddy.Models
                         TrainingLevel = TrainingLevel.Intermediate,
                         Description = "Description",
                         HaveCompleted = false,
+                        Video = "https://www.youtube.com/embed/uYumuL_G_V0?si=dFTgxvHoquURKmXP"
 
 
                     },
@@ -90,6 +96,7 @@ namespace GymBuddy.Models
                         TrainingLevel = TrainingLevel.Intermediate,
                         Description = "Description",
                         HaveCompleted = false,
+                        Video = "https://www.youtube.com/embed/r4MzxtBKyNE?si=nu_CUJ8ZeOiSxMXA"
                     },
                     new Exercises
                     {
@@ -100,6 +107,7 @@ namespace GymBuddy.Models
                         TrainingLevel = TrainingLevel.Beginner,
                         Description = "Description",
                         HaveCompleted = false,
+                        Video = "https://www.youtube.com/embed/rxD321l2svE?si=yLYIP2S8FIFSpAC_"
 
 
                     },
@@ -112,6 +120,7 @@ namespace GymBuddy.Models
                         TrainingLevel = TrainingLevel.Beginner,
                         Description = "Description",
                         HaveCompleted = false,
+                        Video = "https://www.youtube.com/embed/taI4XduLpTk?si=8zHAeKxEmE7gBf3q"
 
 
                     },
@@ -124,6 +133,7 @@ namespace GymBuddy.Models
                         TrainingLevel = TrainingLevel.Intermediate,
                         Description = "Description",
                         HaveCompleted = false,
+                        Video = "https://www.youtube.com/embed/HCA4B1IDcAk?si=i4nDb2lqKLNK1D0X"
 
 
                     },
@@ -136,6 +146,7 @@ namespace GymBuddy.Models
                         TrainingLevel = TrainingLevel.Beginner,
                         Description = "Description",
                         HaveCompleted = false,
+                        Video = "https://www.youtube.com/embed/G_8LItOiZ0Q?si=ZzW9yEz8EkMnD-Pn"
                     },
                     new Exercises
                     {
@@ -146,6 +157,7 @@ namespace GymBuddy.Models
                         TrainingLevel = TrainingLevel.Beginner,
                         Description = "Description",
                         HaveCompleted = false,
+                        Video = "https://www.youtube.com/embed/LXkCrxn3caQ?si=PKZzn9T9EmUanaaM"
                     },
                     new Exercises
                     {
@@ -156,6 +168,7 @@ namespace GymBuddy.Models
                         TrainingLevel = TrainingLevel.Advanced,
                         Description = "Description",
                         HaveCompleted = false,
+                        Video = "https://www.youtube.com/embed/qf6KO7qKFRI?si=zdy5ZPPi1DWMkAJT"
 
 
                     },
@@ -168,6 +181,7 @@ namespace GymBuddy.Models
                         TrainingLevel = TrainingLevel.Advanced,
                         Description = "Description",
                         HaveCompleted = false,
+                        Video = "https://www.youtube.com/embed/ZXpdJOLNoWw?si=rYU3vWggPosMVY7d"
 
 
                     },
@@ -180,6 +194,7 @@ namespace GymBuddy.Models
                         TrainingLevel = TrainingLevel.Beginner,
                         Description = "Description",
                         HaveCompleted = false,
+                        Video = "https://www.youtube.com/embed/DlhojghkaQ0?si=AUVrz6E7o0y0dukB"
 
 
                     },
@@ -192,6 +207,7 @@ namespace GymBuddy.Models
                         TrainingLevel = TrainingLevel.Beginner,
                         Description = "Description",
                         HaveCompleted = false,
+                        Video = "https://www.youtube.com/embed/eMTy3qylqnE?si=px46ZptU0mkMzmoG"
                     }
 
 

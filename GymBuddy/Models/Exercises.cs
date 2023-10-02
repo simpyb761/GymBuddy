@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Text.RegularExpressions;
 using System.Xml.Linq;
 
 namespace GymBuddy.Models
@@ -39,5 +40,19 @@ namespace GymBuddy.Models
         [Display(Name = "Have Completed")]
         public bool HaveCompleted { get; set; }
 
+        [Display(Name = "Youtube Video")]
+        [CustomValidation(typeof(AWValidation), "ValidateYoutubeLink")]
+        public string Video {  get; set; }
+    }
+    public class AWValidation
+    {
+        public static ValidationResult ValidateYoutubeLink(string url)
+        {
+            if(Regex.IsMatch(url, "embed"))
+            {
+                return ValidationResult.Success;
+            }
+            return new ValidationResult("Please enter an embedded YouTube link!");
+        }
     }
 }
