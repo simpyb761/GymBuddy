@@ -74,9 +74,27 @@
                 <td class="border-top-0 border-bottom-0 border-3 border-end-0 border-dark p-4">
                 @Html.DisplayFor(modelItem => item.HaveCompleted)
             </td>
-                <td class="border-top-0 border-bottom-0 border-3 border-start-0 border-dark pt-4">
-                    <a asp-page="./Edit" asp-route-id="@item.Id"><i class="fa-solid fa-pen-to-square fa-lg" style="color: #000000;"></i></a>
-                    <a class="ms-2" asp-page="./Delete" asp-route-id="@item.Id"><i class="fa-solid fa-x fa-lg" style="color: #ff0000;"></i></a>
+                <td class="border-top-0 border-bottom-0 border-3 border-start-0 border-dark pt-4">              
+                        <a asp-page="./Edit" asp-route-id="@item.Id"><i class="fa-solid fa-pen-to-square fa-lg" style="color: #000000;"></i></a>
+                    <a href="#" class="text-danger ms-2" data-bs-toggle="modal" data-bs-target="#deleteModal-@item.Id"><i class="fa-solid fa-x fa-lg" style="color:#ff0000"></i></a>
+
+                    <div class="modal fade" id="deleteModal-@item.Id" tabindex="-1" aria-labelledby="deleteModalLabel-@item.Id" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="deleteModalLabel-@item.Id">Confirm Deletion</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Are you sure you want to delete this item: @item.Name?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                    <a class="btn btn-danger" asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
             </td>
         </tr>
         }
