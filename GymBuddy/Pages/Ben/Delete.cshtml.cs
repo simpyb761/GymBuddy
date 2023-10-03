@@ -28,26 +28,6 @@ namespace GymBuddy.Pages.Ben
             {
                 return NotFound();
             }
-
-            var exercises = await _context.Exercises.FirstOrDefaultAsync(m => m.Id == id);
-
-            if (exercises == null)
-            {
-                return NotFound();
-            }
-            else 
-            {
-                Exercises = exercises;
-            }
-            return Page();
-        }
-
-        public async Task<IActionResult> OnPostAsync(int? id)
-        {
-            if (id == null || _context.Exercises == null)
-            {
-                return NotFound();
-            }
             var exercises = await _context.Exercises.FindAsync(id);
 
             if (exercises != null)
@@ -59,5 +39,7 @@ namespace GymBuddy.Pages.Ben
 
             return RedirectToPage("./Index");
         }
+
+      
     }
 }
