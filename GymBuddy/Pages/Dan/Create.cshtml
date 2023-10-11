@@ -5,10 +5,12 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h1 style="background-color:DodgerBlue;
+            color: white;
+            text-align: center;">
+    Create New Exercise
+</h1>
 
-<h4>Exercises</h4>
-<hr />
 <div class="row">
     <div class="col-md-4">
         <form method="post">
@@ -49,6 +51,11 @@
                 </label>
             </div>
             <div class="form-group">
+                <label asp-for="Exercises.Video" class="control-label"></label>
+                <input asp-for="Exercises.Video" class="form-control" />
+                <span asp-validation-for="Exercises.Video" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
@@ -56,9 +63,11 @@
 </div>
 
 <div>
-    <a asp-page="Index">Back to List</a>
+    <a asp-page="Index">Back to Exercise List</a>
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
