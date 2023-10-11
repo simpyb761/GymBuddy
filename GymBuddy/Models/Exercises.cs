@@ -22,12 +22,12 @@ namespace GymBuddy.Models
         [Required]
         public int Id { get; set; }
         [Required]
-        public string Name { get; set; }
+        public string? Name { get; set; }
         [Required]
-        public string Description { get; set; }
+        public string? Description { get; set; }
         [Required]
         [Display(Name = "Primary Muscle")]
-        public string PrimaryMuscle { get; set; }
+        public string? PrimaryMuscle { get; set; }
         [Display(Name = "Secondary Muscle")]
         public string? SecondaryMuscle { get; set; }
         [Display(Name = "Training Level")]
@@ -38,15 +38,15 @@ namespace GymBuddy.Models
         public IntensityLevel IntensityLevel { get; set; }
         [Required]
         [Display(Name = "Have Completed")]
-        public bool HaveCompleted { get; set; }
+        public bool HaveCompleted { get; set; } 
 
         [Display(Name = "Youtube Video")]
-        [CustomValidation(typeof(AWValidation), "ValidateYoutubeLink")]
-        public string Video {  get; set; }
+       // [CustomValidation(typeof(AWValidation), "ValidateYoutubeLink")]
+        public string? Video {  get; set; }
     }
-    public class AWValidation
+    /*public class AWValidation
     {
-        public static ValidationResult ValidateYoutubeLink(string url)
+        public static ValidationResult? ValidateYoutubeLink(string url)
         {
             if(Regex.IsMatch(url, "embed"))
             {
@@ -54,5 +54,5 @@ namespace GymBuddy.Models
             }
             return new ValidationResult("Please enter an embedded YouTube link!");
         }
-    }
+    }*/
 }
