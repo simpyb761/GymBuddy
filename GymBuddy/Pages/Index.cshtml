@@ -2,9 +2,54 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
+    Layout = "";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - GymBuddy</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/GymBuddy.styles.css" asp-append-version="true" />
+    <script src="https://kit.fontawesome.com/89a93ee081.js" crossorigin="anonymous"></script>
+    <script>
+        function toggle() {
+            if (document.getElementById("filters").hidden == true) {
+                document.getElementById("filters").hidden = false;
+            } else {
+                document.getElementById("filters").hidden = true
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="text-center bg-light p-5">
+        <h1 class="display-4 text-uppercase">Gym Buddy</h1>
+        
+        <img src="~/Images/gymPhoto.jpg" alt="Gym Picture" style="width:50%;"/>
+        <h2 class="mt-5">Elevate your life - Find your potential</h2>
+        <h3 class="mt-3 mb-3">Get Started Below</h3>
+        <div class="ms-auto me-auto" style="width:50%;">
+            <div class="row ms-auto me-auto">
+                <div class="border border-2 border-dark" style="width:33%;"><a class="nav-link text-dark link-opacity-75-hover" asp-area="" asp-page="/Ben/Index"><h2>Ben</h2></a></div>
+                <div class="border border-2 border-dark" style="width:33%;"><a class="nav-link text-dark link-opacity-75-hover" asp-area="" asp-page="/Michelle/Index"><h2>Michelle</h2></a></div>
+                <div class="border border-2 border-dark" style="width:33%;"><a class="nav-link text-dark link-opacity-75-hover" asp-area="" asp-page="/Dan/Index"><h2>Dan</h2></a></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - GymBuddy - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>
+

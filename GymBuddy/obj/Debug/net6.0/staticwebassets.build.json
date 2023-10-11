@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Hdm1XzsRS4gAXqg7L05Y7ir1Fs9ymmbUNkD1FdpergI=",
+  "Hash": "c7MfzDfqFwOtnWEa7Su1BZugzbUJjfTbcSuAVG4oJKQ=",
   "Source": "GymBuddy",
   "BasePath": "_content/GymBuddy",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\simpy\\OneDrive\\Documents\\MasterDetailApp\\GymBuddy\\GymBuddy\\wwwroot\\Images\\gymPhoto.jpg",
+      "SourceId": "GymBuddy",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\simpy\\OneDrive\\Documents\\MasterDetailApp\\GymBuddy\\GymBuddy\\wwwroot\\",
+      "BasePath": "_content/GymBuddy",
+      "RelativePath": "Images/gymPhoto.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\gymPhoto.jpg"
     },
     {
       "Identity": "C:\\Users\\simpy\\OneDrive\\Documents\\MasterDetailApp\\GymBuddy\\GymBuddy\\wwwroot\\Images\\photo.jpg",

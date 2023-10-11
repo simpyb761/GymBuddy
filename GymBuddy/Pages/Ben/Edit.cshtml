@@ -9,12 +9,13 @@
 
 
 <hr />
+<div class="border-3 border border-danger p-3 rounded mt-5 bg-light">
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Exercises.Id" />
                 <div class="row">
                     <div class="col-8 mt-5">
-                        <table class="table table-striped">
+                        <table class="table table-striped border border-2 border-dark">
                             <tr>
                                 <td class="p-3"><h2><label asp-for="Exercises.Name" class="control-label"></label>:</h2></td>
                                 <td class="p-3"><input asp-for="Exercises.Name" class="form-control" /><span asp-validation-for="Exercises.Name" class="text-danger"></span></td>
@@ -57,23 +58,23 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="col-4 text-center">
+                    <div class="col-4 text-center border border-2 border-dark mt-5">
                         <h2 class="p-3 mb-1">Youtube Video</h2>
                         <input asp-for="Exercises.Video" class="form-control" />
                         <span asp-validation-for="Exercises.Video" class="text-danger"></span>
 
-                        <h2 class="p-3 mb-3"><label asp-for="Exercises.Description" class="control-label"></label></h2>
+                        <h2 class="p-3 mb-2"><label asp-for="Exercises.Description" class="control-label"></label></h2>
                         <textarea style="height:150px;" asp-for="Exercises.Description" class="form-control"></textarea>
                         <span asp-validation-for="Exercises.Description" class="text-danger"></span>
 
                     </div>
                 </div>
                 <div class="row" style="margin-left:auto; margin-right:auto; width:25%;">
-                    <input type="submit" value="Create" class="btn btn-primary me-3" style="width:25%; text-align:center;" />
+                    <input type="submit" value="Submit" class="btn btn-primary me-3" style="width:25%; text-align:center;" />
                     <button class="btn btn-primary" style="width:50%; text-align:center;"><a asp-page="Index"></a>Home</button>
                 </div>
         </form>
-
+</div>
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
