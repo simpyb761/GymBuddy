@@ -5,10 +5,12 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h1 style="background-color:DodgerBlue;
+            color: white;
+            text-align: center;">
+    Create New Exercise
+</h1>
 
-<h4>Exercises</h4>
-<hr />
 <div class="row">
     <div class="col-md-4">
         <form method="post">
@@ -35,18 +37,25 @@
             </div>
             <div class="form-group">
                 <label asp-for="Exercises.TrainingLevel" class="control-label"></label>
-                <select asp-for="Exercises.TrainingLevel" class="form-control"></select>
-                <span asp-validation-for="Exercises.TrainingLevel" class="text-danger"></span>
+                <select asp-for="Exercises.TrainingLevel" asp-items="Html.GetEnumSelectList<GymBuddy.Models.TrainingLevel>()">
+                    <option selected="selected" value="">Please select an option</option>
+                </select>
             </div>
             <div class="form-group">
                 <label asp-for="Exercises.IntensityLevel" class="control-label"></label>
-                <select asp-for="Exercises.IntensityLevel" class="form-control"></select>
-                <span asp-validation-for="Exercises.IntensityLevel" class="text-danger"></span>
+                <select asp-for="Exercises.IntensityLevel" asp-items="Html.GetEnumSelectList<GymBuddy.Models.IntensityLevel>()">
+                    <option selected="selected" value="">Please select an option</option>
+                </select>
             </div>
             <div class="form-group form-check">
                 <label class="form-check-label">
                     <input class="form-check-input" asp-for="Exercises.HaveCompleted" /> @Html.DisplayNameFor(model => model.Exercises.HaveCompleted)
                 </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="Exercises.Video" class="control-label"></label>
+                <input asp-for="Exercises.Video" class="form-control" />
+                <span asp-validation-for="Exercises.Video" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
@@ -56,9 +65,11 @@
 </div>
 
 <div>
-    <a asp-page="Index">Back to List</a>
+    <a asp-page="Index">Back to Exercise List</a>
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

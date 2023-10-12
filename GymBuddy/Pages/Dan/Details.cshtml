@@ -5,11 +5,15 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<h1 style="background-color:DodgerBlue;
+            color: white;
+            text-align: center;">
+    Exercise Details
+</h1>
 
-<div>
-    <h4>Exercises</h4>
-    <hr />
+<div class="bg-dark text-white">
+
+
     <dl class="row">
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Exercises.Name)
@@ -56,6 +60,12 @@
     </dl>
 </div>
 <div>
+
+    <iframe width="400" height="200" src="@Html.DisplayFor(model => model.Exercises.Video)" title="Youtube Video Player" frameborder="0"
+            allow="accelerometer; web-share"></iframe>
+</div>
+
+<div>
     <a asp-page="./Edit" asp-route-id="@Model.Exercises?.Id">Edit</a> |
-    <a asp-page="./Index">Back to List</a>
+    <a asp-page="./Index">Back to Exercise List</a>
 </div>

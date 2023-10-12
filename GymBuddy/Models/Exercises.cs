@@ -38,21 +38,30 @@ namespace GymBuddy.Models
         public IntensityLevel IntensityLevel { get; set; }
         [Required]
         [Display(Name = "Have Completed")]
-        public bool HaveCompleted { get; set; } 
+        public bool HaveCompleted { get; set; }
 
+        [Required]
         [Display(Name = "Youtube Video")]
-       // [CustomValidation(typeof(AWValidation), "ValidateYoutubeLink")]
+       [CustomValidation(typeof(AWValidation), "ValidateYoutubeLink")]
         public string? Video {  get; set; }
     }
-    /*public class AWValidation
+    public class AWValidation
     {
         public static ValidationResult? ValidateYoutubeLink(string url)
         {
-            if(Regex.IsMatch(url, "embed"))
+             if (string.IsNullOrWhiteSpace(url)) 
+                {  
+                return null; 
+                } 
+            else
             {
-                return ValidationResult.Success;
+                if (Regex.IsMatch(url, "embed"))
+                {
+                    return ValidationResult.Success;
+                }
+                return new ValidationResult("Please enter an embedded YouTube link!");
             }
-            return new ValidationResult("Please enter an embedded YouTube link!");
+            
         }
-    }*/
+    }
 }
