@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Daniel\\Desktop\\UPLOAD\\GymBuddy\\GymBuddy\\GymBuddy.csproj": {}
+    "C:\\Users\\Daniel\\Desktop\\GIT UPLOAD\\GymBuddy\\GymBuddy\\GymBuddy.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Daniel\\Desktop\\UPLOAD\\GymBuddy\\GymBuddy\\GymBuddy.csproj": {
+    "C:\\Users\\Daniel\\Desktop\\GIT UPLOAD\\GymBuddy\\GymBuddy\\GymBuddy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Daniel\\Desktop\\UPLOAD\\GymBuddy\\GymBuddy\\GymBuddy.csproj",
+        "projectUniqueName": "C:\\Users\\Daniel\\Desktop\\GIT UPLOAD\\GymBuddy\\GymBuddy\\GymBuddy.csproj",
         "projectName": "GymBuddy",
-        "projectPath": "C:\\Users\\Daniel\\Desktop\\UPLOAD\\GymBuddy\\GymBuddy\\GymBuddy.csproj",
+        "projectPath": "C:\\Users\\Daniel\\Desktop\\GIT UPLOAD\\GymBuddy\\GymBuddy\\GymBuddy.csproj",
         "packagesPath": "C:\\Users\\Daniel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Daniel\\Desktop\\UPLOAD\\GymBuddy\\GymBuddy\\obj\\",
+        "outputPath": "C:\\Users\\Daniel\\Desktop\\GIT UPLOAD\\GymBuddy\\GymBuddy\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
