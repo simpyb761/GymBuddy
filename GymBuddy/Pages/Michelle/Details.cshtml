@@ -9,7 +9,8 @@
             font-size: 20px;
             padding: 5px;
             margin: 10px;">
-<h1> Exercise Details</h1>
+ <h1 class="text-center mb-5 mt-5">@Html.DisplayFor(model => model.Exercises.Name)</h1>
+
 </div>
 <div style="min-height:400px;Color:black;
      font-size: 20px;
@@ -17,55 +18,49 @@
      border: 15px solid lightblue;
      margin: 10px;">
     
-    <h4>Exercises</h4>
-    <img>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Exercises.Name)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Exercises.Name)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Exercises.Description)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Exercises.Description)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Exercises.PrimaryMuscle)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Exercises.PrimaryMuscle)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Exercises.SecondaryMuscle)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Exercises.SecondaryMuscle)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Exercises.TrainingLevel)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Exercises.TrainingLevel)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Exercises.IntensityLevel)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Exercises.IntensityLevel)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Exercises.HaveCompleted)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Exercises.HaveCompleted)
-        </dd>
-    </dl>
+    <div class="row mt-5">
+
+        <div class="col-8 mt-5">
+            <table class="table table-striped">
+                <tr>
+                    <td class="p-3"><h2>@Html.DisplayNameFor(model => model.Exercises.PrimaryMuscle):</h2></td>
+                    <td class="p-3"><h4>@Html.DisplayFor(model => model.Exercises.PrimaryMuscle)</h4></td>
+                </tr>
+                <tr>
+                    <td class="p-3"><h2>@Html.DisplayNameFor(model => model.Exercises.SecondaryMuscle):</h2></td>
+                    <td class="p-3"><h4>@Html.DisplayFor(model => model.Exercises.SecondaryMuscle)</h4></td>
+                </tr>
+                <tr>
+                    <td class="p-3"><h2>@Html.DisplayNameFor(model => model.Exercises.TrainingLevel):</h2></td>
+                    <td class="p-3"><h4>@Html.DisplayFor(model => model.Exercises.TrainingLevel)</h4></td>
+                </tr>
+                <tr>
+                    <td class="p-3"><h2>@Html.DisplayNameFor(model => model.Exercises.IntensityLevel):</h2></td>
+                    <td class="p-3"><h4>@Html.DisplayFor(model => model.Exercises.IntensityLevel)</h4></td>
+                </tr>
+                <tr>
+                    <td class="p-3"><h2>@Html.DisplayNameFor(model => model.Exercises.HaveCompleted):</h2></td>
+                    <td class="p-3"><h4>@Html.DisplayFor(model => model.Exercises.HaveCompleted)</h4></td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-4 text-center">
+            <h2 class="p-3 mb-3">Youtube Video</h2>
+            <iframe width="400" height="200" src="@Html.DisplayFor(model=> model.Exercises.Video)" title="Youtube Video Player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe>
+
+            <h2 class="p-3 mb-3">@Html.DisplayNameFor(model => model.Exercises.Description)</h2>
+            <textarea class="p-3 mb-3" style="height:150px;">
+                @Html.DisplayFor(model => model.Exercises.Description)
+        </textarea>
+        </div>
+
+    </div>
+   <div class="text-center mt-5">
+        <a class="btn btn-dark"  asp-page="./Edit" asp-route-id="@Model.Exercises?.Id">Edit</a> 
+        <a class="btn btn-secondary" asp-page="./Index">Back to List</a> 
 </div>
-<div>
-    <a asp-page="./Edit" asp-route-id="@Model.Exercises?.Id">Edit</a> |
-    <a asp-page="./Index">Back to List</a>
 </div>
+
+

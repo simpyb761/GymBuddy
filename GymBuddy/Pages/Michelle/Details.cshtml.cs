@@ -18,8 +18,7 @@ namespace GymBuddy.Pages.Michelle
         {
             _context = context;
         }
-
-      public Exercises Exercises { get; set; } = default!; 
+        public Exercises Exercises { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
